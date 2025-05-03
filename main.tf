@@ -2,6 +2,7 @@ provider "aws" {
   region = var.aws_region
   default_tags {
     tags = merge({
+      Name        = local.name
       terraform   = "true"
       owner       = var.owner
       environment = var.environment
