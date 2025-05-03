@@ -11,3 +11,6 @@ provider "aws" {
   }
 }
 
+locals {
+  name = "${var.deployment_name}-${var.environment}-${var.stack}"
+}

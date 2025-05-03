@@ -24,6 +24,11 @@ variable "team" {
   default     = "devops"
 }
 
+variable "deployment_name" {
+  type        = string
+  description = "Deployment name"
+}
+
 variable "additional_tags" {
   type        = map(string)
   description = "Additional tags for all resources"
