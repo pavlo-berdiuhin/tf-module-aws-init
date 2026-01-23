@@ -3,11 +3,12 @@ provider "aws" {
   default_tags {
     tags = merge({
       Name        = local.name
-      terraform   = "true"
-      owner       = var.owner
-      environment = var.environment
-      stack       = var.stack
-      team        = var.team
+      ManagedBy   = var.managed_by
+      Owner       = var.owner
+      Environment = var.environment
+      Stack       = var.stack
+      Team        = var.team
+      OpsTeam     = var.ops_team
     }, var.additional_tags)
   }
 }

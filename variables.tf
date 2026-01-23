@@ -21,7 +21,17 @@ variable "owner" {
 variable "team" {
   type        = string
   description = "Team name"
+}
+
+variable "ops_team" {
+  type        = string
+  description = "Operation Team name"
   default     = "devops"
+}
+
+variable "managed_by" {
+  type        = string
+  description = "Managed By terraform/terragrunt"
 }
 
 variable "deployment_name" {
