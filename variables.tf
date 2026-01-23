@@ -18,6 +18,11 @@ variable "owner" {
   description = "Owner"
 }
 
+variable "department" {
+  type        = string
+  description = "Department name"
+}
+
 variable "team" {
   type        = string
   description = "Team name"

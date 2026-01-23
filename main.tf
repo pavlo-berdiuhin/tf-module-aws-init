@@ -4,9 +4,10 @@ provider "aws" {
     tags = merge({
       Name        = local.name
       ManagedBy   = var.managed_by
-      Owner       = var.owner
       Environment = var.environment
       Stack       = var.stack
+      Owner       = var.owner
+      Department  = var.department
       Team        = var.team
       OpsTeam     = var.ops_team
     }, var.additional_tags)
